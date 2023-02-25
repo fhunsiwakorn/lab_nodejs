@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 9000;
-const fullname = "รหัสนักศึกษา ชื่อ-นามสกุล";
+const fullname = "Hello API ,Siwakorn Banluesapy";
 //  data
 const products = [
   {
@@ -43,6 +43,14 @@ const products = [
     price: 12900,
     cover:
       "https://store.ais.co.th/media/catalog/product/i/p/ipad_10.2_inch_wi-fi_space_gray_pdp_image_position-1b__th_2.jpg",
+  },
+  {
+    id: "6",
+    name: "CD BNK48",
+    category: "BNK48",
+    price: 2000,
+    cover:
+      "https://www.iurban.in.th/wp-content/uploads/2019/07/BNK48_PR-01.jpg",
   },
 ];
 
