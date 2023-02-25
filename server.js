@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 9000;
+const cors = require("cors");
+
 const fullname = "Hello API ,Siwakorn Banluesapy";
 //  data
 const products = [
@@ -53,6 +55,9 @@ const products = [
       "https://www.iurban.in.th/wp-content/uploads/2019/07/BNK48_PR-01.jpg",
   },
 ];
+
+app.use(express.json(), cors());
+// app.use(cors());
 
 app.get("/", (req, res) => {
   res.json({ message: fullname });
